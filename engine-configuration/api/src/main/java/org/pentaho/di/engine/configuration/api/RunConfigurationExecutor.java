@@ -28,11 +28,12 @@ import org.pentaho.di.ExecutionConfiguration;
 import org.pentaho.di.base.AbstractMeta;
 import org.pentaho.di.core.exception.KettleException;
 import org.pentaho.di.core.variables.VariableSpace;
+import org.pentaho.di.repository.Repository;
 
 /**
  * Created by bmorrise on 3/16/17.
  */
 public interface RunConfigurationExecutor {
   void execute( RunConfiguration runConfiguration, ExecutionConfiguration configuration, AbstractMeta meta,
-                VariableSpace variableSpace ) throws KettleException;
+                VariableSpace variableSpace, Repository repository ) throws KettleException;
 }
